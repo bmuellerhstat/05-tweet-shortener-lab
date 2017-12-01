@@ -26,5 +26,11 @@ def word_substituter(string)
     end.join(" ") #puts the characters back into a word 
  end
  
+ def bulk_tweet_shortener(tweets)
+     tweets.each do |tweet|
+         puts word_substituter(tweet)
+     end
+ end
+
  
  
