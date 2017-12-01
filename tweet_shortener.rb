@@ -16,5 +16,15 @@ def dictionary()   #Hash is put into a method so that it can be called?
 }
 end
 
-
+def word_substituter(string)
+    string.split.map do |characters| #splits the text --> put it into a new array 
+    if dictionary.keys.include?(characters.downcase) #checking if string has lowercase; case sensitivity 
+        characters = dictionary[characters.downcase] #
+    else 
+        characters #no downcases --> just return it 
+    end
+    end.join(" ") #puts the characters back into a word 
+ end
+ 
+ 
  
