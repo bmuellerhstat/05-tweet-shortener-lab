@@ -40,4 +40,11 @@ def word_substituter(string)
     end
  end
  
-
+def shortened_tweet_truncator(tweet) #checks the length of tweet also 
+    if word_substituter(tweet).length > 140 #if length > 140, truncate (cut from either end) of tweet
+        word_substituter(tweet)[0..136] + "..." #puts periods in the end
+    else 
+        tweet #or leave as it is 
+    end
+end 
+ 
