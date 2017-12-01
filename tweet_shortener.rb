@@ -33,7 +33,7 @@ def word_substituter(string)
  end
   
  def selective_tweet_shortener(tweets) #checks the length of tweet  
-    if tweets.length > 140 # if length > 140, put it into the other method to shorten it 
+    if tweets.length > 140 # if length > 140, put it into the other method to shorten it with substitutions  
         word_substituter(tweets)
     else
         tweets #or leave as it is 
@@ -41,4 +41,3 @@ def word_substituter(string)
  end
  
 
- 
