@@ -25,12 +25,12 @@ def word_substituter(long_tweet)
 end 
 
 def bulk_tweet_shortener(tweet)
-    puts word_substituter
+    puts word_substituter(tweet)
 end
 
 def selective_tweet_shortener(tweet)
     if tweet([a-z]).count > 140
-        puts bulk_tweet_shortener
+        puts bulk_tweet_shortener(tweet)
     elsif tweet([a-z]).count < 130
         tweet
     else
