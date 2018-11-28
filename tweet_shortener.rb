@@ -14,9 +14,9 @@ def dictionary
     }
 end
 
-def word_substituter(sentence)
-    words = sentence.split(" ")
-    words.collect do |word|
+def word_substituter(tweet)
+    words = tweet.split(" ")
+    words.map do |word|
     if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
     else
